@@ -14,8 +14,6 @@ def print_wave(y=1800):
 
 if __name__ == '__main__':
     import sys
-    if(len(sys.argv) > 1):
-        num=int(sys.argv[1])
-    else:
-        num=1800
+    num=int(sys.argv[1])
+
     print_wave(num)
