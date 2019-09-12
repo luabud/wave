@@ -11,6 +11,7 @@ def home():
         numspaces_list.append(wave.make_dot_string(i))
     return render_template("home.html",numspaces_list=(numspaces_list))
 
+# code below is based on https://code.visualstudio.com/docs/python/tutorial-flask
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
