@@ -1,4 +1,4 @@
 .pytest_cache/
 env/
-*_pycache_/
+*_pycache_/*
 .vscode/*

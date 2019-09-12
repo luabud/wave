@@ -7,7 +7,7 @@ from . import wave
 @app.route("/")
 def home():
     numspaces_list = []
-    for i in range(0, 1800, 10):
+    for i in range(0, 1800, 3):
         numspaces_list.append(wave.make_dot_string(i))
     return render_template("home.html",numspaces_list=(numspaces_list))
 
