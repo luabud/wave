@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+
+    <body>
+            <div id="container" class="body-content"> 
+                {% block content %}
+                {% endblock %}
+            </div>
+    </body>
+    <script>
+        var i=1
+        var numspaces = '{{numspaces_list}}'.split(", ");
+        setInterval(function() {
+            document.getElementById("wave").insertAdjacentHTML("beforeend",'<br>'+'-'.repeat(numspaces[i++]) + 'o</br>');
+        },500)
+    </script>
+</html>
