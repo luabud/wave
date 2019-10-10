@@ -16,6 +16,4 @@ if __name__ == '__main__':
     import sys
     if(len(sys.argv) > 1):
         num=int(sys.argv[1])
-    else:
-        num=1800
     print_wave(num)
