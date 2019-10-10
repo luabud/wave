@@ -3,8 +3,6 @@ from math import cos, radians
 def make_dot_string(x,div=1800):
     rad = radians(x)  
     c = abs(round(cos(rad),2))
-    if c == 0:
-        return 0
     numspaces = int((10 *1/c - 10)) 
     return numspaces
 
