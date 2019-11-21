@@ -15,11 +15,6 @@ def print_wave(y=1800):
 
 if __name__ == '__main__':
     import sys
-<<<<<<< HEAD
-    num = int(sys.argv[1])
-    print_wave(num)
-=======
     if(len(sys.argv) > 1):
         num=int(sys.argv[1])
-    print_wave(num)
->>>>>>> 4cff15ba32aa44020bd53641a784e9646d65e540
+        print_wave(num)
