@@ -4,4 +4,5 @@
     "python.testing.pytestEnabled": true,
     "python.linting.flake8Enabled": true,
     "editor.formatOnType": true,
+    "python.pythonPath": "env\\Scripts\\python.exe",
 }
