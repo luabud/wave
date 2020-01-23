@@ -2,3 +2,4 @@
 env/
 *_pycache_/*
 venv/
+.vscode/*
