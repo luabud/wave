@@ -3,13 +3,15 @@ from flask import render_template
 from datetime import datetime
 from . import app
 from . import wave
+import matplotlib as plt
 
 @app.route("/")
 def home():
     numspaces_list = []
-    for i in range(0, 1800, 3):
+    for i in range(0, 1800, 10):
         numspaces_list.append(wave.make_dot_string(i))
     return render_template("home.html",numspaces_list=(numspaces_list))
+
 
 # code below is based on https://code.visualstudio.com/docs/python/tutorial-flask
 
