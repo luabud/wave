@@ -3,7 +3,7 @@ from flask import render_template
 from datetime import datetime
 from . import app
 from . import wave
-import matplotlib as plt
+
 
 @app.route("/")
 def home():
