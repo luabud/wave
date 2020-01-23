@@ -10,7 +10,5 @@ class TestWave(unittest.TestCase):
         self.assertEqual(wave.make_dot_string(60),9)
         self.assertEqual(wave.make_dot_string(120),9)
 
-    def test_division_by0(self):
-        #self.assertNotRaises(ZeroDivisionError, wave.make_dot_string, 90)
-        return True
+
 
