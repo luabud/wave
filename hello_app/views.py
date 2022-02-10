@@ -7,20 +7,6 @@ from . import wave
 def home():
     numspaces_list = []
     for i in range(0, 1800, 3):
-        numspaces_list.append(wave.make_dot_string(i))
-    return render_template("home.html",numspaces_list=(numspaces_list))
+        numspaces_list.append(wave.make_dot(i))
+return render_template("home.html",numspaces_list=(numspaces_list))
 
-# code below is based on https://code.visualstudio.com/docs/python/tutorial-flask
-
-@app.route("/hello/")
-@app.route("/hello/<name>")
-def hello_there(name = None):
-    return render_template(
-        "hello_there.html",
-        name=name,
-        date=datetime.now()
-    )
-
-@app.route("/api/data")
-def get_data():
-    return app.send_static_file("data.json")
